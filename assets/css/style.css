@@ -1,49 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
-/*---------------------------Navbar---------------------------*/
-.navbar{
-    padding-top:7;
+/*---------------------------Newsletter-Alert---------------------------*/
+
+.alert-light .alert-link:hover{
+    color: #e02200;
+    text-decoration:underline;
+    text-align:center;
 }
-.navbar-light .navbar-brand {
-    color: rgb(255, 255, 255);
-} 
-.navbar .navbar-brand:hover{
-    color:red;
+.alert-light{
+    background-color:rgba(255, 255, 255, 0.123);
+    border:none;
 }
-.bg-light{
-    background-color: #00000000 !important;
+.alert-light .alert-link{
+    color:#ffffff;
+    font-size:1rem;
+    text-decoration:underline;
 }
 
-.alert-link{
-    color: #e02200;  
-}
-.alert-link:hover{
-    color: #fff;
-    text-decoration:none;
-}
 /*---------------------------Body---------------------------*/
+
+html{
+    height:100%;
+}
+
 body{
     font-family:"Josefin Sans", sans-serif;
     color:#fff;
+}
+.background-home{
     background:url("../images/amsterdam.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-.layer {
-    background-color: rgba(0, 0, 0, 0.26);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+    min-height:100%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.356);
+}   
 /*----------------------------Header---------------------------*/
 .jumbotron{
     background-color:transparent;
     position:relative;
-    top:10px;
+    top:125px; 
 }
 
 .jumbotron h1{
@@ -61,48 +58,37 @@ body{
     background-color:#e02200;
 }
 
-.callout-container{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position:relative;
-}
-/*----------------------------Menu-----------------------------*/
-.menu-container{
+.callout{
     display:flex;
     align-items:center;
     justify-content:center;
     position:relative;
 }
 
-.menu-items li a i{
-    font-size:150px;
-    color:white;
-     transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
+.btn-primary{
+    background-color:#e02200;
+    border:none;
+    font-size:1.5rem;
 }
-
-.menu-items a i{
-    padding-right:30px;
-    padding-bottom:20px;
-    
+.btn:hover{
+    background-color:#a11800;
 }
-
-.menu-items li a i:hover{
-    color:#e02200;
+.btn.btn-primary:active,
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  background-color:#a11800 !important;
+  box-shadow:none!important;
 }
-
 /*----------------------------Footer---------------------------*/
 footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  color: white;
+  color:white;
   text-align:left;
-  margin:0;
-  position:absolute;
+  margin-left:20px;
+  margin-right:20px;
+  position:fixed;
 }
 
 footer h4{
@@ -113,18 +99,99 @@ footer h4{
     padding-bottom: 20px;
     Text-align:right;
     margin-bottom:0;
+    margin-right:40px;
 }
 
 .social-links li a i {
     font-size: 40px;
     line-height: 15px;
     color: #fafafa;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
+}    
 
 .social-links li a i:hover {
     color: #e02200;
 }
+/*---------------------------Menu-Home---------------------------*/
+.background-menu{
+    background:url("../images/amsterdam.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height:100%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.849);
+}   
+
+/*----------------------------Menu-Alert-----------------------------*/
+.alert-dark .alert-link:hover{
+    color:#e02200;
+    text-decoration:none;
+}
+.alert-dark{
+    background-color:transparent;
+    border:none;
+}
+.alert-dark .alert-link{
+    color:white;
+}
+
+.alert-link{
+    font-size:1.5rem;
+}
+/*----------------------------Menu-----------------------------*/
+.menu-home{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    margin-top:100px;
+}
+.menu-items li a i{
+    font-size:135px;
+    color:white;
+}
+.menu-items a i{
+    padding-right:75px;
+    
+}
+.menu-items li a i:hover{
+    color:#e02200;
+}
+
+
+/*----------------------------Media Queries---------------------------*/
+@media (max-width: 925px) {
+    .footer-row h4{
+        display:none;
+    }
+    .social-links{
+        text-align:center;
+        margin-bottom:15px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+    .jumbotron h1{
+        font-size:4rem;
+    }  
+}
+
+@media (max-width: 575px) {
+    .jumbotron h1{
+        margin-top:32px;
+    }
+}
+@media (max-width: 400px) {
+    .jumbotron h1{
+        font-size:3.5rem;
+    }
+}
+    
+@media (max-width:1000px) {
+    .menu-items li a i{
+        font-size:100px;
+    }
+}
+    
