@@ -13,3 +13,6 @@ https://stackoverflow.com/questions/50665530/bootstrap-4-button-pressed-change-c
 
 Problem centering menu icons
 https://stackoverflow.com/questions/35163164/how-to-center-content-in-a-bootstrap-column/35163389
+
+image positioning
+https://www.w3schools.com/css/css_positioning.asp

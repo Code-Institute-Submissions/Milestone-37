@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 /*---------------------------Newsletter-Alert---------------------------*/
 
@@ -27,22 +26,35 @@ body{
     font-family:"Josefin Sans", sans-serif;
     color:#fff;
 }
-.background-home{
-    background:url("../images/amsterdam.jpg") no-repeat center center fixed;
+.home-container{
+    height:100vh;
+    background:url("../images/amsterdam.jpg") no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    min-height:100%;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.356);
-}   
-/*----------------------------Header---------------------------*/
+    background-size: cover; 
+    min-height:100%; 
+    right:0;
+    left:0;
+}
+.home-overlay {
+    position:fixed;
+    left:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.356);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+}
+/*----------------------------Homepage-Jumbotron---------------------------*/
 .jumbotron{
     background-color:transparent;
     position:relative;
     top:75px; 
 }
-
 .jumbotron h1{
     font-weight:bold;
     margin-bottom:15px;
@@ -57,14 +69,12 @@ body{
     height:5px;
     background-color:#e02200;
 }
-
 .callout{
     display:flex;
     align-items:center;
     justify-content:center;
     position:relative;
 }
-
 .btn-primary{
     background-color:#e02200;
     border:none;
@@ -73,10 +83,11 @@ body{
 .btn:hover{
     background-color:#a11800;
 }
-.btn.btn-primary:active,
-.btn.btn-primary:hover,
-.btn.btn-primary:focus {
-  background-color:#a11800 !important;
+.btn.btn-primary.btn-lg.btn-block:active,
+.btn.btn-primary.btn-lg.btn-block:hover,
+.btn.btn-primary.btn-lg.btn-block:focus,
+.btn.btn-primary.btn-lg.btn-block:active:focus {
+  background-color:#a11800;
   box-shadow:none!important;
 }
 /*----------------------------Footer---------------------------*/
@@ -90,7 +101,6 @@ footer {
   margin-right:20px;
   position:fixed;
 }
-
 footer h4{
     position:relative;
     top:35px;
@@ -101,27 +111,36 @@ footer h4{
     margin-bottom:0;
     margin-right:40px;
 }
-
 .social-links li a i {
     font-size: 40px;
     line-height: 15px;
     color: #fafafa;
-}    
-
+}   
 .social-links li a i:hover {
     color: #e02200;
 }
-/*---------------------------Menu-Home---------------------------*/
-.background-menu{
-    background:url("../images/amsterdam.jpg") no-repeat center center fixed;
+/*---------------------------Background for Menu and options---------------------------*/
+.background-container{
+    background:url("../images/amsterdam.jpg") no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    min-height:100%;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.849);
-}   
-
+    background-size: cover;  
+    right:0;
+    left:0;
+}
+.opaque-overlay {
+    position:fixed;
+    left:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;  
+}
 /*----------------------------Menu-Alert-----------------------------*/
 .alert-dark .alert-link:hover{
     color:#e02200;
@@ -157,8 +176,7 @@ footer h4{
 .m-item{
     text-align:center;
     margin-left:25px;
-    margin-right:0px;
-    
+    margin-right:0px;   
 }
 .m-item h5{
     text-align:center;
@@ -166,16 +184,48 @@ footer h4{
     padding-top:10px;
     padding-bottom:30px;
     margin-right:35px;
-
+}
+/*----------------------------Café-page---------------------------*/
+.header h1{
+    text-align:center;
+}
+.cafe{
+    text-align:center;
+    padding-top:20px;
+}
+.cafe h3{
+    text-decoration:underline 2px #e02200;
+}
+.cafe img{
+    border-radius:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.cafe-footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color:white;
+  text-align:left;
+  margin-left:20px;
+  margin-right:20px;
+  position:relative;
+  padding-top:75px;
 }
 /*----------------------------Media Queries---------------------------*/
 @media (max-width: 995px) {
-    .footer-row h4{
+    .footer h4{
+        display:none;
+    }
+    .menu-footer h4{
         display:none;
     }
     .social-links{
         text-align:center;
         margin-bottom:15px;
+    }
+    .cafe-footer h4{
+        display:none;
     }
 }
 
@@ -201,4 +251,9 @@ footer h4{
         font-size:95px;
     }
 }
-    
+
+@media (max-width: 992px) {
+    .cafe{
+        padding-top:75px;
+    }
+}
