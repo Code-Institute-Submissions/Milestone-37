@@ -16,3 +16,6 @@ https://stackoverflow.com/questions/35163164/how-to-center-content-in-a-bootstra
 
 image positioning
 https://www.w3schools.com/css/css_positioning.asp
+
+background-image sizing
+https://www.webfx.com/blog/web-design/responsive-background-image/
