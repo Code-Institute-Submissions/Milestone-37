@@ -47,7 +47,9 @@ body{
     -o-background-size: cover;
     background-size: cover;  
 }
+
 /*----------------------------Homepage-Jumbotron---------------------------*/
+
 .jumbotron{
     background-color:transparent;
     position:relative;
@@ -88,7 +90,9 @@ body{
   background-color:#a11800;
   box-shadow:none!important;
 }
+
 /*----------------------------Footer---------------------------*/
+
 footer {
   left: 0;
   bottom: 0;
@@ -117,7 +121,9 @@ footer h4{
 .social-links li a i:hover {
     color: #e02200;
 }
-/*---------------------------Background for Menu and options---------------------------*/
+
+/*---------------------------Background for Menu and Options---------------------------*/
+
 body{
     background:url("../images/amsterdam.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -138,7 +144,8 @@ body{
     -o-background-size: cover;
     background-size: cover;  
 }
-/*----------------------------Menu-Alert-----------------------------*/
+/*----------------------------Menu "X" Alert-----------------------------*/
+
 .alert-dark .alert-link:hover{
     color:#e02200;
     text-decoration:none;
@@ -148,13 +155,15 @@ body{
     border:none;
 }
 .alert-dark .alert-link{
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 .alert-link{
     font-size:1.5rem;
 }
+
 /*----------------------------Menu-----------------------------*/
+
 .menu-items{
     display:flex;
     position:relative;
@@ -182,7 +191,9 @@ body{
     padding-bottom:30px;
     margin-right:35px;
 }
-/*----------------------------Café-page---------------------------*/
+
+/*----------------------------Café/Parks/Selfie/Burger Pages---------------------------*/
+
 .header h1{
     text-align:center;
 }
@@ -209,7 +220,16 @@ body{
   position:relative;
   padding-top:150px;
 }
+
+.btn-toki{
+    margin-top:40px;
+}
+.btn-kruimel{
+    margin-top:40px;
+}
+
 /*----------------------------Form-Section---------------------------*/
+
 .signup{
     position:relative;
     text-align:center;
@@ -234,7 +254,9 @@ input{
     border:none;
     border-radius:5px;
 }
+
 /*----------------------------Media Queries---------------------------*/
+
 @media (max-width: 995px) {
     .footer h4{
         display:none;
@@ -277,5 +299,71 @@ input{
 @media (max-width: 992px) {
     .location{
         padding-top:75px;
+    }
+}
+
+@media (min-width: 2500px) {
+    .jumbotron{
+        top:300px;
+    }
+    .jumbotron h1{
+        font-size:10rem;
+    }
+    .jumbotron .lead{
+        font-size:3.5rem;
+    }
+    .btn-primary{
+        font-size:2rem;
+    }
+    .alert-light .alert-link{
+        font-size:2rem;
+    }
+    .social-links li a i{
+        font-size:4rem;
+    }
+    .footer h4{
+        font-size:3rem;
+    }
+    .alert-link{
+        font-size:3rem;
+    }
+    .menu-items a i{
+        font-size:17rem;
+    }
+    .m-item h5{
+        font-size:2rem;
+    }
+    .h4, h4{
+        font-size:3rem;
+    }
+    .h1, h1{
+        font-size:5rem;
+    }
+    .rounded{
+        width:750px;
+        height:10px;
+    }
+    .btn-winkel{
+        margin-top:40px;
+    }
+    .location p{
+        font-size:2rem;
+    }
+    .h3, h3{
+        font-size:3rem;
+    }
+    .location{
+        padding-top:60px;
+    }
+    .selfie-footer{
+        margin-top:150px;
+    }
+    input{
+    height:80px;
+    width:600px;
+    font-size:2rem;
+    }
+    .h2, h2{
+    font-size:3rem;
     }
 }
