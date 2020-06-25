@@ -107,10 +107,25 @@ at 2500px and resized everything.
 
 * I followed the directions on this [link from GitHub](https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) on how to deploy my project.
 
+* The Amstergram deployed project can be found [here](https://ryanrayn.github.io/Milestone-1/index.html).
 
+# Credits
 
+* I used tutor support for help with a problem with Bootstrap Formatting. It was a weird issue that took awhile to solve
+ but, a div on my menu was set to col-sm-6 which was not responding. After playing around with it we discovered col-6 worked
+ in place of it.
 
+* I used tutor support when I discovered that my elements weren't resizing onto larger screens 2500px+. The tutor said it
+looked fine and shouldn't be a problem but I went in an added a media query to enlarge everything at 2500px anyway.
 
+* Some of the pictures found for Amstergram were available for download on [Flickr](https://www.flickr.com/). Others were either
+taken by myself or found on Google images and were marked "free to use commercially".
+
+* [Stack Overflow](https://stackoverflow.com/)  and [W3Schools.com](https://www.w3schools.com/) were also resources I used quite often to help solve coding problems.
+
+## Special Thanks & Acknowledgements
+
+* To the Code Institutes great tutor support who were always happy to help with any issues I encountered, they were all beyond friendly!
 
 
 
